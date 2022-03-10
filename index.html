@@ -11,34 +11,54 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    <fieldset>
-      <label>Bill</label>
-      <input type="number" id="billAmount" placeholder="$0.00" />Select Tip %
-      <button id="btn5">5%</button>
-      <button id="btn10">10%</button>
-      <button id="btn15">15%</button>
-      <button id="btn25">25%</button>
-      <button id="btn50">50%</button>
-      <button id="btnCustom">custom</button>
+    <div>
+      <p class="spli">SPLI</p>
       <br />
-      <label>Number of People</label>
-      <input type="number" id="numPeople" placeholder="0" />
-    </fieldset>
-    <fieldset>
-      <label>Tip Amount/person</label>
-      <span id="tipTotal"></span>
-      <br />
-      <label>Total/person</label>
-      <span id="total"></span>
-      <br />
-      <button id="btnReset">Reset</button>
-    </fieldset>
-
+      <p class="tter">TTER</p>
+    </div>
+    <div class="box container-fluid">
+      <fieldset class="info col-md-6">
+        <label>Bill:</label>
+        <input type="number" id="billAmount" placeholder="$0.00" />
+        <div id="btnsDiv">
+          Select Tip %
+          <input type="radio" name="tip" id="btn5" value=".05" />
+          <label for="tipChoice1">5%</label>
+          <input type="radio" name="tip" id="btn10" value=".1" />
+          <label for="tipChoice2">10%</label>
+          <input type="radio" name="tip" id="btn10" value=".15" />
+          <label for="tipChoice3">15%</label>
+          <input type="radio" name="tip" id="btn10" value=".25" />
+          <label for="tipChoice4">25%</label>
+          <input type="radio" name="tip" id="btn10" value=".50" />
+          <label for="tipChoice5">50%</label>
+          <button id="btnCustom">custom</button>
+        </div>
+        <br />
+        <label>Number of People</label>
+        <input type="number" id="numPeople" placeholder="0" />
+      </fieldset>
+      <fieldset class="answer col-md-6">
+        <label>Tip Amount/person</label>
+        <span id="tipTotal"></span>
+        <br />
+        <label>Total/person</label>
+        <span id="total"></span>
+        <br />
+        <button id="btnReset">Reset</button>
+      </fieldset>
+    </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
