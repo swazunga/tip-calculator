@@ -29,31 +29,31 @@
     </div>
     <div class="box container-fluid">
       <fieldset class="info col-md-6">
-        <label>Bill:</label>
+        <label>Bill</label><br />
         <input type="number" id="billAmount" placeholder="$0.00" />
         <div id="btnsDiv">
-          Select Tip %
+          Select Tip % <br />
           <input type="radio" name="tip" id="btn5" value=".05" />
-          <label for="tipChoice1">5%</label>
+          <label for="btn5">5%</label>
           <input type="radio" name="tip" id="btn10" value=".1" />
-          <label for="tipChoice2">10%</label>
-          <input type="radio" name="tip" id="btn10" value=".15" />
-          <label for="tipChoice3">15%</label>
-          <input type="radio" name="tip" id="btn10" value=".25" />
-          <label for="tipChoice4">25%</label>
-          <input type="radio" name="tip" id="btn10" value=".50" />
-          <label for="tipChoice5">50%</label>
-          <button id="btnCustom">custom</button>
+          <label for="btn10">10%</label>
+          <input type="radio" name="tip" id="btn15" value=".15" />
+          <label for="btn15">15%</label>
+          <input type="radio" name="tip" id="btn25" value=".25" />
+          <label for="btn25">25%</label>
+          <input type="radio" name="tip" id="btn50" value=".50" />
+          <label for="btn50">50%</label>
+          <button id="btnCustom"><b>Custom</b></button>
         </div>
         <br />
         <label>Number of People</label>
         <input type="number" id="numPeople" placeholder="0" />
       </fieldset>
       <fieldset class="answer col-md-6">
-        <label>Tip Amount/person</label>
+        <label>Tip Amount<br />/person</label>
         <span id="tipTotal"></span>
         <br />
-        <label>Total/person</label>
+        <label>Total<br />/person</label>
         <span id="total"></span>
         <br />
         <button id="btnReset">Reset</button>
